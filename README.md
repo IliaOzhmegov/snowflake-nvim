@@ -16,7 +16,7 @@ Neovim-native query workflow for SSO-heavy environments.
 - Support multiple named profiles
 - Provide `:checkhealth snowflake`
 
-- ## Non-goals
+## Non-goals
 
 - Replacing vim-dadbod
 - Supporting non-Snowflake databases
