@@ -6,6 +6,14 @@ snowflake-nvim avoids spawning SnowSQL for every query. It keeps a local Python
 worker alive, reuses Snowflake connections where possible, and provides a
 Neovim-native query workflow for SSO-heavy environments.
 
+## Why?
+
+Existing Neovim database workflows often rely on spawning external CLIs such as
+SnowSQL. For Snowflake environments using browser-based SSO, that can make
+interactive querying slow.
+
+snowflake-nvim is designed around a persistent local Python worker instead.
+
 ## MVP scope
 
 - Connect to Snowflake with external browser authentication
